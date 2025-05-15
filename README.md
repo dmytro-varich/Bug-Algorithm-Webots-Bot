@@ -58,27 +58,27 @@ The robot model in Webots represents a mobile platform with a differential drive
 
 | Wheel        | Position       | Mass | Size           | Motor         |
 | ------------ | -------------- | ---- | -------------- | ------------- |
-| wheel\_left  | Rear left      | 1 kg | r=0.05, h=0.03 | `motor_left`  |
-| wheel\_right | Rear right     | 1 kg | r=0.05, h=0.03 | `motor_right` |
-| wheel\_rear  | Support (rear) | 5 kg | r=0.05, h=0.04 | `motor_rear`  |
+| `wheel_left`  | Rear left      | 1 kg | r=0.05, h=0.03 | `motor_left`  |
+| `wheel_right` | Rear right     | 1 kg | r=0.05, h=0.03 | `motor_right` |
+| `wheel_rear`  | Support (rear) | 5 kg | r=0.05, h=0.04 | `motor_rear`  |
 
 #### 📡 Lidars
 
 | Name         | Position      | Field of View | Range | Resolution |
 | ------------ | ------------- | ------------- | ----- | ---------- |
-| lidar\_front | Front         | \~60°         | 0.5 m | 256        |
-| lidar\_left  | Left          | \~45°         | 0.6 m | 256        |
-| lidar\_right | Right (fixed) | \~45°         | 0.6 m | 256        |
+| `lidar_front` | Front         | \~60°         | 0.5 m | 256        |
+| `lidar_left`  | Left          | \~45°         | 0.6 m | 256        |
+| `lidar_right` | Right (fixed) | \~45°         | 0.6 m | 256        |
 
 #### 🔊 Ultrasonic Distance Sensors (Sonars)
 
 | Name               | Position   | Direction          | Max Range |
 | ------------------ | ---------- | ------------------ | --------- |
-| sonar\_front       | Front      | Forward            | 0.5 m     |
-| sonar\_right       | Right      | Right              | 0.5 m     |
-| sonar\_back\_right | Back right | Back-right (\~30°) | 0.5 m     |
-| sonar\_left        | Left       | Left               | 0.5 m     |
-| sonar\_back\_left  | Back left  | Back-left (\~30°)  | 0.5 m     |
+| `sonar_front`       | Front      | Forward            | 0.5 m     |
+| `sonar_right`       | Right      | Right              | 0.5 m     |
+| `sonar_back_right` | Back right | Back-right (\~30°) | 0.5 m     |
+| `sonar_left`        | Left       | Left               | 0.5 m     |
+| `sonar_back_left`  | Back left  | Back-left (\~30°)  | 0.5 m     |
 
 #### 🧭 Additional Sensors
 
