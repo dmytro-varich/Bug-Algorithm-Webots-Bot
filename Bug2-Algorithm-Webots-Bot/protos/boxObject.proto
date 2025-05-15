@@ -1,0 +1,21 @@
+#VRML_SIM R2023b utf8
+PROTO BoxObject [
+]
+{
+  Solid {
+    translation 1.67 -2.87 0.2
+    children [
+      DEF BOX_1 Shape {
+        appearance DEF BOX_COLOR PBRAppearance {
+          baseColor 0.0901961 0.101961 0.321569
+          roughness 1
+          metalness 0
+        }
+        geometry Box {
+          size 1.5 0.8 0.4
+        }
+      }
+    ]
+    boundingObject USE BOX_1
+  }
+}
