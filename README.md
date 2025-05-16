@@ -18,13 +18,13 @@ Bug2-Algorithm-Webots-Bot/
 ```
 
 ## 🛠️ Tech Stack:
-- Language: `Python`.
-- Environment: `Webots`.
-- Robot Model: `Custom`.
-- Algorithm: `Bug2 Navigation`.
-
+- Language: `Python`
+- Environment: `Webots`
+- Robot Model: `Custom`
+- Algorithm: `Bug2`
+  
 ## 🎥 Demo Video
-...
+https://github.com/user-attachments/assets/14758d53-76c9-48fe-9161-3371dce5e57a
 
 ## ▶️ How to run
 1. Install [Webots](https://cyberbotics.com/).
@@ -53,38 +53,44 @@ The **Bug2 algorithm** is a classical path-planning algorithm for mobile robots 
 </p>
 
 The robot model in Webots represents a mobile platform with a differential drive and a set of sensors for navigation and spatial orientation. The robot is equipped with various sensors, including **lidars**, a **compass**, **GPS**, and **ultrasonic sensors (sonars)**, enabling obstacle detection and environmental awareness. Each wheel is controlled by a **motor** and tracked with a **position encoder** to enable precise motion control. Both the wheels and the robot body have `boundingObjects` defined via `Shape` (Cylinder). A simplified physical behavior is specified (**mass**, **density**) suitable for motion simulation.
-
-#### 🔧 Drives and Wheels
+<details>
+  <summary><b>Drives and Wheels</b></summary>
 
 | Wheel        | Position       | Mass | Size           | Motor         |
 | ------------ | -------------- | ---- | -------------- | ------------- |
 | `wheel_left`  | Rear left      | 1 kg | r=0.05, h=0.03 | `motor_left`  |
 | `wheel_right` | Rear right     | 1 kg | r=0.05, h=0.03 | `motor_right` |
 | `wheel_rear`  | Support (rear) | 5 kg | r=0.05, h=0.04 | `motor_rear`  |
+</details>
 
-#### 📡 Lidars
+<details>
+  <summary><b>Lidars</b></summary>
 
-| Name         | Position      | Field of View | Range | Resolution |
-| ------------ | ------------- | ------------- | ----- | ---------- |
-| `lidar_front` | Front         | \~60°         | 0.5 m | 256        |
-| `lidar_left`  | Left          | \~45°         | 0.6 m | 256        |
-| `lidar_right` | Right (fixed) | \~45°         | 0.6 m | 256        |
+| Name          | Position      | Field of View | Range | Resolution |
+| ------------- | ------------- | ------------- | ----- | ---------- |
+| `lidar_front` | Front         | ~60°          | 0.5 m | 256        |
+| `lidar_left`  | Left          | ~45°          | 0.6 m | 256        |
+| `lidar_right` | Right (fixed) | ~45°          | 0.6 m | 256        |
+</details>
 
-#### 🔊 Ultrasonic Distance Sensors (Sonars)
+<details>
+  <summary><b>Ultrasonic Distance Sensors (Sonars)</b></summary>
 
 | Name               | Position   | Direction          | Max Range |
 | ------------------ | ---------- | ------------------ | --------- |
 | `sonar_front`       | Front      | Forward            | 0.5 m     |
 | `sonar_right`       | Right      | Right              | 0.5 m     |
-| `sonar_back_right` | Back right | Back-right (\~30°) | 0.5 m     |
+| `sonar_back_right`  | Back right | Back-right (~30°)  | 0.5 m     |
 | `sonar_left`        | Left       | Left               | 0.5 m     |
-| `sonar_back_left`  | Back left  | Back-left (\~30°)  | 0.5 m     |
+| `sonar_back_left`   | Back left  | Back-left (~30°)   | 0.5 m     |
+</details>
 
-#### 🧭 Additional Sensors
+<details>
+  <summary><b>Additional Sensors</b></summary>
 
-* **GPS** — determines the global coordinates of the robot.
+* **GPS** — determines the global coordinates of the robot.  
 * **Compass** — measures orientation relative to magnetic north.
-
+</details>
 
 ## ⚙️ Implementation
 ![Bug 2 Algorithm](https://github.com/dmytro-varich/Bug-Algorithm-Webots-Bot/blob/main/assets/Bug2_Algorithm.drawio.png)
